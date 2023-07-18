@@ -19,7 +19,15 @@
                 <div class="col-md-3">
                     <a href=""><img src="<?=get_theme_mod("mse_logo") ?>" alt="logo"></a>
                 </div>
-                <div class="col-md-9"></div>
+                <div class="col-md-9">
+                    <div class="mse-nav">
+                        <?php wp_nav_menu(array(
+                                "theme_location" => "main_menu",
+                                "menu_class"     => "mse-nav-menu",
+                                "container"       =>false
+                                )); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

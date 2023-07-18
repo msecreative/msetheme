@@ -1,9 +1,115 @@
 
+/*=======================================
+ Common CSS
+========================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* Header style */
 #header-area {
-    padding: 15px 0;
+  padding: 15px 0;
+}
+
+/*=======================================
+Header Area Style
+========================================*/
+#header-area {
+padding: 15px 0;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu {
+font-family: "Poppins", sans-serif;
+margin: 10px 0 0;
+padding: 0;
+list-style: none;
+text-align: right;
+font-size: 14px;
+font-weight: 400;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li{
+  display: inline-block;
+  position: relative;
+  list-style: none;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li>a,
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>a,
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+  color: #262626;
+  padding: 15px 20px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header-area .mse-nav>ul.mse-nav-menu>li>a:hover,
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>a:hover,
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+  background: #ea1a70;
+  color: #fff;
+}
+
+/*Dropdown Menu*/
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu {
+  background: #262626 none repeat scroll 0 0;
+  margin: 0;
+  /* transition: 0.2s ease-in; */
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  min-width: 160px;
+  visibility: hidden;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+#header-area .mse-nav>ul.mse-nav-menu>li:hover ul {
+  visibility: visible;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li:nth-last-child(-n +3 ):hover ul {
+  right: 0;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>a,
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+  color: #fff;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li>ul.sub-menu {
+  background: #262626 none repeat scroll 0 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 160px;
+  text-align: right;
+  top: 0;
+  width: 160px;
+  visibility: hidden;
+  list-style: none;
+  text-align: center;
+}
+
+#header-area .mse-nav>ul.mse-nav-menu>li>ul.sub-menu>li:hover ul.sub-menu {
+  visibility: visible;
 }
